@@ -1,0 +1,18 @@
+    {
+      "manifest_version": 3,
+      "name": "Text Summarizer",
+      "version": "1.0",
+      "description": "Summarize selected text and display it.",
+      "permissions": ["activeTab", "scripting", "contextMenus", "storage"],
+      "host_permissions": ["https://*/*"],
+      "background": {
+        "service_worker": "background.js"
+      },
+      "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "icon1.png"
+         
+        }
+      }
+    }
